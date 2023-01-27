@@ -13,7 +13,7 @@ The main expected outcomes of the application were the following:<br>
 tasks. <br><br>
 
 ## 2. What does the repository store?
-The REST web service can be implemented using a Python-based microframework called Flask, which allows to build web applications and to develop RESTful APIs to perform operations using HTTP methods.<br>
+The REST web service can be implemented using a Python-based micro-framework called Flask, which allows to build web applications and to develop RESTful APIs to perform operations using HTTP methods.<br>
 In order to meet the project requirements, the scripts and files are stored in the repository in a standardized way for Flask to store all the necessary elements of the web app.<br>
 - <b>static</b> folder contains the CSS file
 - <b>templates</b> folder contains the HTML page
@@ -97,7 +97,7 @@ By default, the Flask route responds to ```GET``` requests, but since the main g
 In fact the way the ```POST``` request is handled is by the ```request``` object, which contains all the data sent from the client to server. <br><br>
  
 ### b. Insertion of a Python code into a Flask app
-The KMP algorithm has been implemented following [this tutorial](https://www.youtube.com/watch?v=qgfGXVq7PEQ&t=4322s). <br>
+The KMP algorithm has been implemented in Python language following [this tutorial](https://www.youtube.com/watch?v=qgfGXVq7PEQ&t=4322s). <br>
 The main characteristic of the KMP algorithm for pattern matching is that it identifies the repeating sub-pattern. In this way it speeds up the computational time compared to a naive algorithm for pattern matching in which in case of a partial mis-match of the string, it has to backtrack completely and start the matching process from the beginning of the pattern.<br>
 In fact, the KMP algorithm analyses the pattern to match and keeps track of the history of the pattern, by memorizing the indices of each element of the pattern, avoiding backtracking. <br>
 For the implementation of the algorithm, it required two functions:
