@@ -1,0 +1,114 @@
+body{
+    margin: 0px;  
+}
+
+.flexDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height:100vh;  
+}
+
+.left{
+    display: flex;
+    background-color:  #ededed;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #658093;
+}
+
+.FormForm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+}
+
+.about{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Georgia;
+}
+
+h1{
+    margin-left: 5%;
+    text-align: left;
+    font-family: Arial;
+}
+
+input[type=text] {
+    padding: 18px 20px;
+    width:300;
+    margin: 14px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    font-family: Georgia;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  input[type=submit] {
+    width: auto;
+    text-align: center;
+    background-color: #c9979c;
+    color: rgb(255, 255, 255);
+    padding: 9px 20px;
+    margin-left: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold; 
+  }
+
+  #clear{
+    background-color: #c9979c;
+    font-size: 18px;
+    padding: 9px 20px; 
+  }
+
+  #clear:hover{
+    background-color: #bc676f;
+  }
+
+  input[type=submit]:hover{
+    background-color: #bc676f;
+  }
+
+  .response{
+    font-size: 24px;
+    font-family: Georgia;
+    color: white; 
+    text-align: center;
+  }
+
+  span{
+    color: #D9B6BA;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: #39576d;
+  }
+
+  .output{
+    display: flex;
+    flex-direction: row;
+
+  }
+  form{
+    text-align: center;
+  }

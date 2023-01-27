@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>KMP for genome pattern matching</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="flexDiv">
+            <div class="left">
+                <h1>KMP for genome pattern matching</h1>
+                <p class="about">
+                    This web application was developed to perform sequence pattern matching on a genome, which is a common task in the field of computational biology and bioinformatics. <br><br>
+                    The algorithm that has been implemented to perform this task is the Knuth-Morris-Pratt (KMP) algorithm, which is widely used in computer science since it speeds up the computational time of string matching, compared to the brute force method of a naïve algorithm. <br> Therefore it is suitable for processing large amounts of data, such as genomic data. <br><br>
+                    The genome on which the pattern is searched for and matched is the one coming from the sequencing of SARS-CoV-2 (<a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta" target="_blank">NCBI Reference Sequence: NC_045512.2</a>), which is the first complete sequencing of the virus that was published on 3rd February 2020 and made publicly available. <br><br>
+                    The application allows the user to type a short nucleotide sequence and it retrieves the number of times where the sequence has matched on the genome.
+                </p>
+            </div>
+            <div class="right">
+                <div class="FormForm">
+                    <form method="post" action=".">
+                        <input type="text" name="pattern" placeholder="Type your pattern among ACGT bases" required pattern="[a,c,g,t,A,C,G,T]{2,}">
+                        <input type="submit" value="Submit">
+                    </form>
+                    
+                    <form method="get" action=".">
+                        <input id="clear" type="submit" value="Clear">
+                    </form>
+                </div>
+                
+                
+                <p class="response">Total times your pattern has matched: <span>{{ count }}</span> </p>
+            </div>
+            
+        </div>  
+    </body>
+</html>
+
