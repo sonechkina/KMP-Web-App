@@ -21,7 +21,7 @@ In order to meet the project requirements, the scripts and files are stored in t
 - <b>api.py</b> file contains the route to HTML page and Python script.
 - <b>sequence.txt</b> file contains the SARS-CoV-2 complete genome sequence in form of a text file. Compliant with the requirement, in this way the sequence is internally stored in the web app.<br>
 
-Eventually, a new directory in the folder will appear called <b>__pycache__</b> that contains Python 3 bytecode compiled and ready to be executed. This allows the program to start running a little faster.
+Eventually, a new directory in the folder will appear called <b>`__pycache__`</b> that contains Python 3 bytecode compiled and ready to be executed. This allows the program to start running a little faster.
 
 Since the app is quite basic, the CSS and HTML codes could be written internally into the main Python script, but the allocation of these files to the respective folders guarantees a better interoperability: if something has to be modified it can be done in the respective files without compromising the main code on which the app runs.<br> <br>
 
